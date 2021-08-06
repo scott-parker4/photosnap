@@ -11,7 +11,7 @@
       href="./assets/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Photosnap Website Challenge</title>
   </head>
@@ -24,13 +24,22 @@
               src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg"
           /></a>
         </div>
-        <nav></nav>
+        <nav class="headerNav">
+          <div class="menu-icon">
+            <input type="checkbox" class="menu-icon__checkbox" />
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
       </header>
       <main>
         <div class="hero">
           <div class="heroImage">
             <img
               src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/home/mobile/create-and-share_lzwaiy.jpg"
+              aria-hidden="true"
             />
           </div>
           <div class="heroCard">
@@ -40,7 +49,7 @@
               We make it easy to share photos, tell stories and connect with
               others.
             </p>
-            <button class="textCardButton">get an invite</button>
+            <a href="#" class="textCardButton"><h4>get an invite</h4></a>
           </div>
         </div>
         <div class="homePhotoCard">

@@ -1,0 +1,30 @@
+.heroCard {
+  background-color: $pure-black;
+  padding: 7.2rem 2.5rem;
+  p {
+    color: $light-grey;
+  }
+  h1,
+  h4 {
+    text-transform: uppercase;
+    color: $pure-white;
+  }
+  a {
+    display: inline-block;
+    margin-right: 1.8rem;
+  }
+  &::after {
+    content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628259686/assets/shared/desktop/arrow_white_bm1xf8.svg");
+
+    vertical-align: middle;
+  }
+}
+
+.heroImage {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/home/mobile/create-and-share_lzwaiy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  img {
+    visibility: hidden;
+  }
+}

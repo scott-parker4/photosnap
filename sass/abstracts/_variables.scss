@@ -32,6 +32,7 @@ $main-gradient: linear-gradient(225deg, $light-orange, $violet, $blue);
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
+$min-width: 375px;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
