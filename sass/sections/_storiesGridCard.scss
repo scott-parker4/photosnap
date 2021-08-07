@@ -1,0 +1,45 @@
+.storiesGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.storiesGridCard {
+  min-width: 375px;
+  min-height: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 3.2rem;
+  color: $pure-white;
+
+  hr {
+    width: 100%;
+    border-top: 1px $light-grey;
+    margin-top: 0;
+  }
+  h3 {
+    margin-bottom: 0.4rem;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  &.mountains {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/mountains_daxygz.jpg");
+  }
+  &.sunset {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/cityscapes_dncoig.jpg");
+  }
+  &.voyage {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/mobile/18-days-voyage_lwhk8u.jpg");
+  }
+  &.arch {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/mobile/architecturals_d3g6tl.jpg");
+  }
+}
+
+.readStory {
+  margin: 0;
+  text-transform: uppercase;
+}

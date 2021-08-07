@@ -631,3 +631,81 @@ footer {
   content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");
   vertical-align: middle;
 }
+
+.features {
+  padding: 8rem 3.2rem;
+}
+
+.featuresCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+
+.featuresCard img {
+  width: 72px;
+  margin-bottom: 6.5rem;
+}
+
+.featuresCard h3 {
+  margin-top: 0;
+}
+
+.featuresCard p {
+  margin: 0;
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.storiesGridCard {
+  min-width: 375px;
+  min-height: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 3.2rem;
+  color: white;
+}
+
+.storiesGridCard hr {
+  width: 100%;
+  border-top: 1px #dfdfdf;
+  margin-top: 0;
+}
+
+.storiesGridCard h3 {
+  margin-bottom: 0.4rem;
+}
+
+.storiesGridCard h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.storiesGridCard.mountains {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/mountains_daxygz.jpg");
+}
+
+.storiesGridCard.sunset {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/cityscapes_dncoig.jpg");
+}
+
+.storiesGridCard.voyage {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/mobile/18-days-voyage_lwhk8u.jpg");
+}
+
+.storiesGridCard.arch {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/mobile/architecturals_d3g6tl.jpg");
+}
+
+.readStory {
+  margin: 0;
+  text-transform: uppercase;
+}
