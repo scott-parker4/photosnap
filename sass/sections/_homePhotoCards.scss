@@ -1,0 +1,27 @@
+.photoCardImage {
+  img {
+    width: 100%;
+  }
+}
+
+.photoCardText {
+  padding: 7.2rem 2.4rem;
+  h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 0.33rem;
+    text-transform: uppercase;
+  }
+  h4 {
+    text-transform: uppercase;
+    color: $pure-black;
+  }
+  a {
+    display: inline-block;
+    margin-right: 1.8rem;
+  }
+  &::after {
+    content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");
+    vertical-align: middle;
+  }
+}
