@@ -1,0 +1,51 @@
+.mobileNav {
+  position: absolute;
+  background-color: $pure-white;
+  width: 100%;
+  min-width: 375px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  padding: 3.2rem;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  z-index: 5000;
+  ul {
+    list-style-type: none;
+  }
+  a:active {
+    color: $light-grey;
+  }
+  hr {
+    margin-bottom: 2rem;
+  }
+}
+
+.mobileNavLinks {
+  padding: 0;
+  li {
+    margin-bottom: 2rem;
+  }
+}
+
+.notVisible {
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 2000;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: opacity 0.8s;
+}
+
+.active {
+  transform: translate3d(0vw, 0, 0);
+  opacity: 1;
+}

@@ -8,12 +8,12 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assets/favicon.png"
     />
 
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Frontend Mentor | Photosnap Website Challenge</title>
+    <title>Photosnap | Photo Sharing</title>
   </head>
   <body>
     <div class="bodyContainer">
@@ -35,6 +35,16 @@
         </nav>
       </header>
       <main>
+        <div class="overlay"></div>
+        <nav class="mobileNav notVisible">
+          <ul class="mobileNavLinks">
+            <li><a href="#">STORIES</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <hr />
+            <button class="blockButton mobileButton">GET AN INVITE</button>
+          </ul>
+        </nav>
         <div class="hero">
           <div class="heroImage">
             <img
@@ -229,5 +239,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="./js/nav.js"></script>
   </body>
 </html>

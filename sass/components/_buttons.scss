@@ -1,0 +1,14 @@
+.blockButton {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  padding: 1.4rem 6.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileButton {
+  @extend .blockButton;
+  color: $pure-white;
+  background-color: $pure-black;
+}
