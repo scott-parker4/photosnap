@@ -8,4 +8,4 @@ This site is currently in production.
 
 ## Current Status :
 
-- Homepage mobile layout finished
+- Homepage mobile layout finished / For best viewing experience only view at mobile screen sizes
