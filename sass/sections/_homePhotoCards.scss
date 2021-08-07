@@ -17,8 +17,7 @@
     color: $pure-black;
   }
   a {
-    display: inline-block;
-    margin-right: 1.8rem;
+    @extend .arrowTransition;
   }
   &::after {
     content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");

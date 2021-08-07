@@ -17,7 +17,6 @@ function showMenu() {
 
   nav.classList.toggle('active');
   overlay.classList.toggle('active');
-  //   burger.classList.toggle("is-active")
 }
 
 burger.addEventListener('click', showMenu);

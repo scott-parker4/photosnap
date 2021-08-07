@@ -17,6 +17,7 @@
     width: 100%;
     border-top: 1px $light-grey;
     margin-top: 0;
+    margin-bottom: 2rem;
   }
   h3 {
     margin-bottom: 0.4rem;
@@ -40,6 +41,12 @@
 }
 
 .readStory {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   text-transform: uppercase;
+  img {
+    height: 14px;
+    width: 43px;
+  }
 }

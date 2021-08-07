@@ -23,3 +23,12 @@ a {
     color: $pure-black;
   }
 }
+
+.arrowTransition {
+  display: inline-block;
+  margin-right: 1.8rem;
+  transition: ease-out 0.2s;
+  &:hover {
+    margin-right: 4rem;
+  }
+}
