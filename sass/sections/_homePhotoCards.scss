@@ -24,3 +24,34 @@
     vertical-align: middle;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .homePhotoCard {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  &.photoCardReverse {
+    grid-template-columns: 1.5fr 1fr;
+    .photoCardText {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  &.stories {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/beautiful-stories_rfhj22.jpg");
+  }
+  &.everyone {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/designed-for-everyone_ndwwfl.jpg");
+  }
+
+  .photoCardImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      display: none;
+    }
+  }
+  .photoCardText {
+    padding: 13.5rem 5.5rem;
+  }
+}

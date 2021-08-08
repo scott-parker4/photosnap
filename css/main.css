@@ -687,6 +687,23 @@ footer {
   visibility: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .heroCard {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 17.5rem 5.5rem;
+  }
+  .heroImage {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/create-and-share_b1ejma.jpg");
+  }
+}
+
 .photoCardImage img {
   width: 100%;
 }
@@ -710,6 +727,36 @@ footer {
 .photoCardText::after {
   content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");
   vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .homePhotoCard {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .photoCardReverse {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .photoCardReverse .photoCardText {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .stories {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/beautiful-stories_rfhj22.jpg");
+  }
+  .everyone {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/designed-for-everyone_ndwwfl.jpg");
+  }
+  .photoCardImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .photoCardImage img {
+    display: none;
+  }
+  .photoCardText {
+    padding: 13.5rem 5.5rem;
+  }
 }
 
 .features {
@@ -796,4 +843,12 @@ footer {
 .readStory img {
   height: 14px;
   width: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .storiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(500px, auto) minmax(500px, auto);
+  }
 }

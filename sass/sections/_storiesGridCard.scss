@@ -50,3 +50,11 @@
     width: 43px;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .storiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(500px, auto) minmax(500px, auto);
+  }
+}

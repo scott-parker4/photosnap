@@ -32,16 +32,8 @@ $main-gradient: linear-gradient(225deg, $light-orange, $violet, $blue);
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
+$tablet-width: 768px;
 $min-width: 375px;
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  "small": 320px,
-  "medium": 768px,
-  "large": 1024px,
-) !default;
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

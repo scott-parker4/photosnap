@@ -26,3 +26,20 @@
     visibility: hidden;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .heroCard {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 17.5rem 5.5rem;
+  }
+  .heroImage {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/create-and-share_b1ejma.jpg");
+  }
+}
