@@ -67,3 +67,47 @@ footer {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+@media screen and (min-width: $tablet-width) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .footerLeft {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .social {
+    order: 3;
+    max-width: 50%;
+    margin-bottom: 0;
+    ul {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  .footerNav {
+    width: 80%;
+    margin-bottom: 7rem;
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 0;
+    }
+  }
+  .footerLogo {
+    margin-bottom: 3.2rem;
+  }
+  .footerRight {
+    justify-content: space-between;
+    a,
+    .copyright {
+      text-align: right;
+    }
+    .copyright {
+      width: 100%;
+    }
+  }
+}

@@ -563,6 +563,50 @@ footer {
   font-weight: 400;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social {
+    order: 3;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+  .social ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footerNav {
+    width: 80%;
+    margin-bottom: 7rem;
+  }
+  .footerNav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .footerLogo {
+    margin-bottom: 3.2rem;
+  }
+  .footerRight {
+    justify-content: space-between;
+  }
+  .footerRight a,
+  .footerRight .copyright {
+    text-align: right;
+  }
+  .footerRight .copyright {
+    width: 100%;
+  }
+}
+
 .blockButton, .mobileButton {
   font-size: 1.5rem;
   font-weight: 700;
@@ -850,5 +894,17 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(500px, auto) minmax(500px, auto);
+  }
+  .storiesGridCard.mountains {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528488/assets/stories/desktop/mtndark_uwec6x.jpg");
+  }
+  .storiesGridCard.sunset {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528833/assets/stories/desktop/sunsetdark_pzzmxo.jpg");
+  }
+  .storiesGridCard.voyage {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528909/assets/stories/desktop/voyageDesktopDark_u45ezc.jpg");
+  }
+  .storiesGridCard.arch {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528976/assets/stories/desktop/archDesktopDark_vumzzg.jpg");
   }
 }

@@ -57,4 +57,19 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(500px, auto) minmax(500px, auto);
   }
+
+  .storiesGridCard {
+    &.mountains {
+      background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528488/assets/stories/desktop/mtndark_uwec6x.jpg");
+    }
+    &.sunset {
+      background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528833/assets/stories/desktop/sunsetdark_pzzmxo.jpg");
+    }
+    &.voyage {
+      background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528909/assets/stories/desktop/voyageDesktopDark_u45ezc.jpg");
+    }
+    &.arch {
+      background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528976/assets/stories/desktop/archDesktopDark_vumzzg.jpg");
+    }
+  }
 }
