@@ -43,3 +43,18 @@
     background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/create-and-share_b1ejma.jpg");
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .hero {
+    grid-template-columns: 1fr 1.4fr;
+  }
+
+  .heroCard {
+    padding: 17.5rem 11rem;
+  }
+
+  .heroImage {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/home/desktop/create-and-share_mq3qx5.jpg");
+    background-position: center;
+  }
+}

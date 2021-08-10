@@ -516,7 +516,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .headerNav {
     width: 30%;
   }
@@ -529,7 +529,7 @@ header {
   padding: 2.8rem 2.4rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   header {
     justify-content: space-around;
   }
@@ -805,6 +805,19 @@ footer {
     grid-column: 2;
     grid-row: 1;
     background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/tablet/create-and-share_b1ejma.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    grid-template-columns: 1fr 1.4fr;
+  }
+  .heroCard {
+    padding: 17.5rem 11rem;
+  }
+  .heroImage {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/home/desktop/create-and-share_mq3qx5.jpg");
+    background-position: center;
   }
 }
 
