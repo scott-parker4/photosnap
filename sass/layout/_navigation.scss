@@ -80,3 +80,9 @@
     padding: 0;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .headerNav {
+    width: 30%;
+  }
+}

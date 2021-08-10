@@ -4,3 +4,9 @@ header {
   align-items: center;
   padding: 2.8rem 2.4rem;
 }
+
+@media screen and (min-width: $desktop-width) {
+  header {
+    justify-content: space-around;
+  }
+}

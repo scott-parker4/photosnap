@@ -395,7 +395,13 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContainer {
   min-width: 375px;
+  max-width: 1440px;
 }
 
 main {
@@ -510,11 +516,23 @@ ul {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .headerNav {
+    width: 30%;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.8rem 2.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    justify-content: space-around;
+  }
 }
 
 footer {

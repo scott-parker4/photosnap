@@ -31,8 +31,9 @@ $main-gradient: linear-gradient(225deg, $light-orange, $violet, $blue);
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 1440px !default;
 $tablet-width: 768px;
+$desktop-width: 1000px;
 $min-width: 375px;
 
 /// Relative or absolute URL where all assets are served from
