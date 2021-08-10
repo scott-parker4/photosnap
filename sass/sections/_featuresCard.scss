@@ -29,3 +29,14 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .features {
+    display: flex;
+    flex-direction: row;
+  }
+  .featuresCard {
+    justify-content: space-between;
+    margin: 0;
+  }
+}
