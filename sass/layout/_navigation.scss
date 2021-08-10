@@ -16,6 +16,9 @@
   }
   a:active {
     color: $light-grey;
+    &:link {
+      color: $pure-black;
+    }
   }
   hr {
     margin-bottom: 2rem;

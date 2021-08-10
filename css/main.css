@@ -448,6 +448,10 @@ ul {
   color: #dfdfdf;
 }
 
+.mobileNav a:active:link {
+  color: black;
+}
+
 .mobileNav hr {
   margin-bottom: 2rem;
 }
