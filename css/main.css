@@ -1010,3 +1010,22 @@ footer {
     background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528976/assets/stories/desktop/archDesktopDark_vumzzg.jpg");
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .storiesGridContainer {
+    position: relative;
+  }
+  .storiesGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(500px, auto);
+    min-height: 5rem;
+  }
+  .storiesGridCard {
+    min-width: 0;
+    transform: translateY(0);
+    transition: all 0.2s;
+  }
+  .storiesGridCard:hover {
+    transform: translateY(-20px);
+  }
+}

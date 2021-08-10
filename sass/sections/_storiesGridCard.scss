@@ -73,3 +73,22 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .storiesGridContainer {
+    position: relative;
+  }
+  .storiesGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(500px, auto);
+    min-height: 5rem;
+  }
+  .storiesGridCard {
+    min-width: 0;
+    transform: translateY(0);
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-20px);
+    }
+  }
+}
