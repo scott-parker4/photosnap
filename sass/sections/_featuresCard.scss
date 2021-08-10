@@ -34,9 +34,15 @@
   .features {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 12rem 6.5rem;
   }
   .featuresCard {
     justify-content: space-between;
     margin: 0;
+    padding: 2rem;
+    .uploadIcon {
+      margin: 1.8rem 0 8.3rem 0;
+    }
   }
 }

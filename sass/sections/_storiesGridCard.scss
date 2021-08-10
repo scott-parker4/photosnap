@@ -87,6 +87,7 @@
     min-width: 0;
     transform: translateY(0);
     transition: all 0.2s;
+    margin: 0;
     &:hover {
       transform: translateY(-20px);
     }
