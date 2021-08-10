@@ -50,3 +50,30 @@
   transform: translate3d(0vw, 0, 0);
   opacity: 1;
 }
+
+.headerNavLinks,
+.navInvite {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .menu-icon,
+  .mobileNav,
+  .overlay {
+    display: none;
+  }
+
+  .navInvite {
+    display: initial;
+  }
+
+  .headerNav {
+    width: 40%;
+  }
+
+  .headerNavLinks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}

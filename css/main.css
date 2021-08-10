@@ -421,6 +421,10 @@ a:visited {
   margin-right: 4rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .mobileNav {
   position: absolute;
   background-color: white;
@@ -476,6 +480,30 @@ a:visited {
 .active {
   transform: translate3d(0vw, 0, 0);
   opacity: 1;
+}
+
+.headerNavLinks,
+.navInvite {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon,
+  .mobileNav,
+  .overlay {
+    display: none;
+  }
+  .navInvite {
+    display: initial;
+  }
+  .headerNav {
+    width: 40%;
+  }
+  .headerNavLinks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 header {
@@ -607,7 +635,8 @@ footer {
   }
 }
 
-.blockButton, .mobileButton {
+.blockButton, .mobileButton,
+.navInvite {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.25rem;
@@ -616,9 +645,18 @@ footer {
   cursor: pointer;
 }
 
-.mobileButton {
+.mobileButton,
+.navInvite {
   color: white;
   background-color: black;
+}
+
+.navInvite {
+  padding: 1.2rem 2.4rem;
+}
+
+.navInvite h4 {
+  margin: 0;
 }
 
 .menu-icon {
