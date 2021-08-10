@@ -55,3 +55,22 @@
     padding: 13.5rem 5.5rem;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .homePhotoCard {
+    display: grid;
+    grid-template-columns: 1.36fr 1fr;
+  }
+  &.photoCardReverse {
+    grid-template-columns: 1fr 1.36fr;
+  }
+  &.stories {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105416/assets/home/desktop/beautiful-stories_x0t40h.jpg");
+  }
+  &.everyone {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/home/desktop/designed-for-everyone_qzdnpk.jpg");
+  }
+  .photoCardText {
+    padding: 13.5rem 11rem;
+  }
+}

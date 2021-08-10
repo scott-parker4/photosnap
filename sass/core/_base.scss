@@ -11,6 +11,7 @@ html {
 body {
   display: flex;
   justify-content: center;
+  min-width: $min-width;
 }
 
 .bodyContainer {
