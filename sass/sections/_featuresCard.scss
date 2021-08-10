@@ -19,3 +19,13 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .features {
+    padding: 12rem 15.5rem;
+  }
+
+  & .featuresCard:last-child {
+    margin-bottom: 0;
+  }
+}
