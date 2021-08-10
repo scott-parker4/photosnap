@@ -111,3 +111,38 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  footer {
+    padding: 6.5rem 16.5rem;
+    .footerLeft {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .footerLogo {
+    justify-content: flex-start;
+  }
+
+  .footerNav {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+    ul {
+      flex-direction: column;
+      justify-content: space-between;
+      a {
+        text-align: left;
+      }
+    }
+    h4 {
+      margin-top: 0;
+    }
+  }
+
+  .social {
+    max-width: 70%;
+    align-self: flex-end;
+  }
+}
