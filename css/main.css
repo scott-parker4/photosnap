@@ -870,6 +870,26 @@ footer {
   .heroCard {
     padding: 17.5rem 11rem;
   }
+  .heroCard a {
+    position: relative;
+  }
+  .heroCard a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(0, -1rem, 0);
+  }
+  .heroCard a:hover::after,
+  .heroCard a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, -0.5rem, 0);
+  }
   .heroImage {
     background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/home/desktop/create-and-share_mq3qx5.jpg");
     background-position: center;
