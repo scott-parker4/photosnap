@@ -39,6 +39,9 @@ footer {
   a {
     color: $pure-white;
     text-align: center;
+    &:hover {
+      color: $light-grey;
+    }
   }
   ul {
     padding: 0;

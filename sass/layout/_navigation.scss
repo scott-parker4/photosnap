@@ -68,6 +68,10 @@
 
   .navInvite {
     display: initial;
+    transition: all 0.2s;
+    &:hover {
+      background-color: $light-grey;
+    }
   }
 
   .headerNav {
@@ -78,6 +82,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    a:hover {
+      color: $light-grey;
+    }
   }
 }
 

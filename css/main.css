@@ -452,7 +452,7 @@ ul {
 }
 
 .mobileNav a:active {
-  color: #dfdfdf;
+  color: #c8c8c8;
 }
 
 .mobileNav a:active:link {
@@ -506,6 +506,10 @@ ul {
   }
   .navInvite {
     display: initial;
+    transition: all 0.2s;
+  }
+  .navInvite:hover {
+    background-color: #c8c8c8;
   }
   .headerNav {
     width: 40%;
@@ -514,6 +518,9 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
+  }
+  .headerNavLinks a:hover {
+    color: #c8c8c8;
   }
 }
 
@@ -584,6 +591,10 @@ footer {
   text-align: center;
 }
 
+.footerNav a:hover {
+  color: #c8c8c8;
+}
+
 .footerNav ul {
   padding: 0;
 }
@@ -613,7 +624,7 @@ footer {
 }
 
 .copyright {
-  color: #dfdfdf;
+  color: #c8c8c8;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -811,7 +822,7 @@ footer {
 }
 
 .heroCard p {
-  color: #dfdfdf;
+  color: #c8c8c8;
 }
 
 .heroCard h1,
@@ -1009,7 +1020,7 @@ footer {
 
 .storiesGridCard hr {
   width: 100%;
-  border-top: 1px #dfdfdf;
+  border-top: 1px #c8c8c8;
   margin-top: 0;
   margin-bottom: 2rem;
 }
