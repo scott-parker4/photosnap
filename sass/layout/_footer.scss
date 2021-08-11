@@ -57,6 +57,7 @@ footer {
     color: $pure-white;
     display: inline-block;
     margin-right: 1.8rem;
+    @include underline($pure-white, -0.5rem, 0.5rem);
   }
   a {
     width: 100%;
