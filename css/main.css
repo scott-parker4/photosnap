@@ -861,10 +861,10 @@ footer {
 }
 
 .heroCard .gradientBox {
-  height: 100%;
-  width: 0.5rem;
+  height: 0.5rem;
+  width: 40%;
   position: absolute;
-  left: -2.5rem;
+  top: -7.2rem;
   background-image: linear-gradient(225deg, #ffc593, #bc7198, #5a77ff);
 }
 
@@ -889,7 +889,11 @@ footer {
     padding: 17.5rem 5.5rem;
   }
   .heroCard .gradientBox {
+    height: 100%;
+    width: 0.5rem;
+    position: absolute;
     left: -5.5rem;
+    background-image: linear-gradient(225deg, #ffc593, #bc7198, #5a77ff);
   }
   .heroImage {
     grid-column: 2;

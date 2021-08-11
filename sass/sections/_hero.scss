@@ -21,10 +21,10 @@
     width: 100%;
   }
   .gradientBox {
-    height: 100%;
-    width: 0.5rem;
+    height: 0.5rem;
+    width: 40%;
     position: absolute;
-    left: -2.5rem;
+    top: -7.2rem;
     background-image: $main-gradient;
   }
 }
@@ -48,7 +48,11 @@
     grid-row: 1;
     padding: 17.5rem 5.5rem;
     .gradientBox {
+      height: 100%;
+      width: 0.5rem;
+      position: absolute;
       left: -5.5rem;
+      background-image: $main-gradient;
     }
   }
   .heroImage {
