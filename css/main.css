@@ -677,6 +677,15 @@ footer {
     justify-content: space-between;
     margin-top: 0;
   }
+  .footerNav li {
+    transition: all 0.2s;
+  }
+  .footerNav li:hover {
+    transform: translate3d(2rem, 0, 0);
+  }
+  .footerNav li a {
+    height: 100%;
+  }
   .footerLogo {
     margin-bottom: 3.2rem;
   }
