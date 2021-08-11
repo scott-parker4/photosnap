@@ -853,6 +853,10 @@ footer {
   color: #c8c8c8;
 }
 
+.heroCard h1 {
+  margin-top: 0;
+}
+
 .heroCard h1,
 .heroCard h4 {
   text-transform: uppercase;
