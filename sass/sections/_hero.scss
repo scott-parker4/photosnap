@@ -12,9 +12,20 @@
   a {
     @extend .arrowTransition;
   }
-  &::after {
+  .inviteContainer::after {
     content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628259686/assets/shared/desktop/arrow_white_bm1xf8.svg");
     vertical-align: middle;
+  }
+  .heroCardContainer {
+    position: relative;
+    width: 100%;
+  }
+  .gradientBox {
+    height: 100%;
+    width: 0.5rem;
+    position: absolute;
+    left: -2.5rem;
+    background-image: $main-gradient;
   }
 }
 
@@ -36,6 +47,9 @@
     grid-column: 1;
     grid-row: 1;
     padding: 17.5rem 5.5rem;
+    .gradientBox {
+      left: -5.5rem;
+    }
   }
   .heroImage {
     grid-column: 2;
@@ -51,6 +65,9 @@
 
   .heroCard {
     padding: 17.5rem 11rem;
+    .gradientBox {
+      left: -11rem;
+    }
     a {
       @include underline($pure-white, -1rem, -0.5rem);
     }

@@ -850,9 +850,22 @@ footer {
   color: white;
 }
 
-.heroCard::after {
+.heroCard .inviteContainer::after {
   content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628259686/assets/shared/desktop/arrow_white_bm1xf8.svg");
   vertical-align: middle;
+}
+
+.heroCard .heroCardContainer {
+  position: relative;
+  width: 100%;
+}
+
+.heroCard .gradientBox {
+  height: 100%;
+  width: 0.5rem;
+  position: absolute;
+  left: -2.5rem;
+  background-image: linear-gradient(225deg, #ffc593, #bc7198, #5a77ff);
 }
 
 .heroImage {
@@ -875,6 +888,9 @@ footer {
     grid-row: 1;
     padding: 17.5rem 5.5rem;
   }
+  .heroCard .gradientBox {
+    left: -5.5rem;
+  }
   .heroImage {
     grid-column: 2;
     grid-row: 1;
@@ -888,6 +904,9 @@ footer {
   }
   .heroCard {
     padding: 17.5rem 11rem;
+  }
+  .heroCard .gradientBox {
+    left: -11rem;
   }
   .heroCard a {
     position: relative;
