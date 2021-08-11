@@ -559,10 +559,14 @@ footer {
 
 .social img {
   filter: brightness(100);
+  -webkit-filter: brightness(100);
+  transition: filter 0.2s;
+  -webkit-transition: 0.2s -webkit-filter;
 }
 
 .social img:hover {
   filter: brightness(1);
+  -webkit-filter: brightness(1);
 }
 
 .footerLogo {
@@ -663,6 +667,7 @@ footer {
     padding: 6.5rem 16.5rem;
   }
   footer .footerLeft {
+    min-height: 12.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -673,16 +678,22 @@ footer {
     grid-column: 2;
     grid-row: 1 / span 2;
     margin-bottom: 0;
+    height: 100%;
   }
   .footerNav ul {
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .footerNav ul li {
+    padding-left: 2rem;
   }
   .footerNav ul a {
     text-align: left;
   }
+  .footerNav ul,
   .footerNav h4 {
-    margin-top: 0;
+    margin: 0;
   }
   .social {
     max-width: 70%;
