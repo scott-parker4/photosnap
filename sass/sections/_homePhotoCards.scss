@@ -18,6 +18,7 @@
   }
   a {
     @extend .arrowTransition;
+    @include underline($pure-black, -1rem, -0.5rem);
   }
   &::after {
     content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");

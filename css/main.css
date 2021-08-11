@@ -934,6 +934,28 @@ footer {
   color: black;
 }
 
+.photoCardText a {
+  position: relative;
+}
+
+.photoCardText a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate3d(0, -1rem, 0);
+}
+
+.photoCardText a:hover::after, .photoCardText a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, -0.5rem, 0);
+}
+
 .photoCardText::after {
   content: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/shared/desktop/arrow_eav3si.svg");
   vertical-align: middle;
