@@ -12,6 +12,9 @@
   justify-content: flex-end;
   padding: 4rem 3.2rem;
   color: $pure-white;
+  a {
+    color: $pure-white;
+  }
 
   hr {
     width: 100%;
@@ -88,8 +91,22 @@
     transform: translateY(0);
     transition: all 0.2s;
     margin: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.5rem;
+      background-image: $main-gradient;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
     &:hover {
       transform: translateY(-20px);
+      &::after {
+        opacity: 1;
+      }
     }
   }
 }
