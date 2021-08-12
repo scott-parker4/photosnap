@@ -1,0 +1,20 @@
+.hero {
+  &.storiesHero {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .heroCard {
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .hero {
+    &.storiesHero {
+      .heroCard {
+        width: 100%;
+      }
+    }
+  }
+}

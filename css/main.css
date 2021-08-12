@@ -862,6 +862,22 @@ footer {
   }
 }
 
+.hero.storiesHero {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero.storiesHero .heroCard {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .hero.storiesHero .heroCard {
+    width: 100%;
+  }
+}
+
 .heroCard {
   background-color: black;
   padding: 7.2rem 2.5rem;
