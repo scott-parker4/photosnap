@@ -19,12 +19,24 @@
     &.storiesHero {
       background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/desktop/moon-of-appalacia_m8e5vf.jpg");
       .heroCard {
-        width: 100%;
+        width: 80%;
         background-color: transparent;
       }
     }
   }
   .storiesHeroImg {
     display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .hero {
+    &.storiesHero {
+      .heroCard {
+        width: 100%;
+        background-color: transparent;
+        padding: 12rem 10rem;
+      }
+    }
   }
 }
