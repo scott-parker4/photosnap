@@ -19,8 +19,8 @@ footer {
   img {
     filter: brightness(100);
     -webkit-filter: brightness(100);
-    transition: filter 0.2s;
-    -webkit-transition: 0.2s -webkit-filter;
+    transition: filter 0.1s;
+    -webkit-transition: 0.1s -webkit-filter;
     &:hover {
       filter: brightness(1);
       -webkit-filter: brightness(1);

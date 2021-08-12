@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Photosnap is a photo sharing platform for photographers and storytellers."
+    />
     <link
       rel="icon"
       type="image/png"
@@ -14,12 +17,14 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Photosnap | Photo Sharing</title>
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/js/swup.js"></script>
   </head>
   <body>
     <div class="bodyContainer">
       <header>
         <div class="headerLogo">
-          <a href=""
+          <a href="/index.html"
             ><img
               src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg"
           /></a>
@@ -46,7 +51,7 @@
         </nav>
         <button class="blockButton navInvite"><h4>GET AN INVITE</h4></button>
       </header>
-      <main>
+      <main id="swup" class="transition-fade">
         <div class="overlay"></div>
         <nav class="mobileNav notVisible">
           <ul class="mobileNavLinks">
@@ -74,7 +79,7 @@
                 connect with others.
               </p>
               <div class="inviteContainer">
-                <a href="#" class="textCardButton"><h4>get an invite</h4></a>
+                <a href="/#" class="textCardButton"><h4>get an invite</h4></a>
               </div>
             </div>
           </div>
