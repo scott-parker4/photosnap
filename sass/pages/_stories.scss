@@ -1,10 +1,15 @@
 .hero {
   &.storiesHero {
-    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg");
+    background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
-    .heroCard {
-      background-color: transparent;
+    .storiesHeroImg {
+      width: 100%;
+    }
+    img {
+      width: inherit;
+      object-fit: cover;
+      display: block;
     }
   }
 }
@@ -12,9 +17,14 @@
 @media screen and (min-width: $tablet-width) {
   .hero {
     &.storiesHero {
+      background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/desktop/moon-of-appalacia_m8e5vf.jpg");
       .heroCard {
         width: 100%;
+        background-color: transparent;
       }
     }
+  }
+  .storiesHeroImg {
+    display: none;
   }
 }

@@ -863,18 +863,31 @@ footer {
 }
 
 .hero.storiesHero {
-  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg");
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hero.storiesHero .heroCard {
-  background-color: transparent;
+.hero.storiesHero .storiesHeroImg {
+  width: 100%;
+}
+
+.hero.storiesHero img {
+  width: inherit;
+  object-fit: cover;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
+  .hero.storiesHero {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/desktop/moon-of-appalacia_m8e5vf.jpg");
+  }
   .hero.storiesHero .heroCard {
     width: 100%;
+    background-color: transparent;
+  }
+  .storiesHeroImg {
+    display: none;
   }
 }
 
