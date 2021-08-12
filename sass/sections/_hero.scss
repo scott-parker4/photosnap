@@ -39,6 +39,9 @@
   img {
     visibility: hidden;
   }
+  &.featuresImg {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/features/mobile/hero_hyjwgk.jpg");
+  }
 }
 
 @media screen and (min-width: $tablet-width) {

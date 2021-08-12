@@ -1,0 +1,37 @@
+.heroCard {
+  &.inBetaCard {
+    background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/mobile/bg-beta_ghsnxf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .heroCard {
+    &.inBetaCard {
+      padding: 6.8rem 4rem;
+      .gradientBox {
+        left: -4rem;
+      }
+    }
+    &.heroCardContainer {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      h1 {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .heroCard {
+    &.inBetaCard {
+      padding: 6.8rem 16.5rem;
+      .gradientBox {
+        left: -16.5rem;
+      }
+    }
+  }
+}

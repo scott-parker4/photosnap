@@ -853,6 +853,15 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .features.featuresPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
 .heroCard {
   background-color: black;
   padding: 7.2rem 2.5rem;
@@ -898,6 +907,10 @@ footer {
 
 .heroImage img {
   visibility: hidden;
+}
+
+.heroImage.featuresImg {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/features/mobile/hero_hyjwgk.jpg");
 }
 
 @media screen and (min-width: 768px) {
@@ -1085,6 +1098,9 @@ footer {
   .features {
     padding: 12rem 15.5rem;
   }
+  .features .uploadIcon {
+    margin: 1.8rem 0 8.3rem 0;
+  }
   .featuresCard:last-child {
     margin-bottom: 0;
   }
@@ -1101,9 +1117,6 @@ footer {
     justify-content: space-between;
     margin: 0;
     padding: 2rem;
-  }
-  .featuresCard .uploadIcon {
-    margin: 1.8rem 0 8.3rem 0;
   }
 }
 
@@ -1223,5 +1236,37 @@ footer {
   }
   .storiesGridCard:hover::after {
     opacity: 1;
+  }
+}
+
+.heroCard.inBetaCard {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/mobile/bg-beta_ghsnxf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .heroCard.inBetaCard {
+    padding: 6.8rem 4rem;
+  }
+  .heroCard.inBetaCard .gradientBox {
+    left: -4rem;
+  }
+  .heroCard.heroCardContainer {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .heroCard.heroCardContainer h1 {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heroCard.inBetaCard {
+    padding: 6.8rem 16.5rem;
+  }
+  .heroCard.inBetaCard .gradientBox {
+    left: -16.5rem;
   }
 }
