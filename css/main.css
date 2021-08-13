@@ -878,6 +878,11 @@ footer {
   display: block;
 }
 
+.storiesPageGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 @media screen and (min-width: 768px) {
   .hero.storiesHero {
     background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105423/assets/stories/desktop/moon-of-appalacia_m8e5vf.jpg");
@@ -1157,7 +1162,8 @@ footer {
   }
 }
 
-.storiesGrid {
+.storiesGrid,
+.storiesPageGrid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
