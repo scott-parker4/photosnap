@@ -880,7 +880,7 @@ footer {
 
 .storiesPageGrid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 @media screen and (min-width: 768px) {
@@ -894,6 +894,10 @@ footer {
   .storiesHeroImg {
     display: none;
   }
+  .storiesPageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -901,6 +905,10 @@ footer {
     width: 100%;
     background-color: transparent;
     padding: 12rem 10rem;
+  }
+  .storiesPageGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
