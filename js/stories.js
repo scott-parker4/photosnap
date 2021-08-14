@@ -21,7 +21,7 @@ const createCard = (card) => `
     }
     @media only screen and (min-width: 768px) {
         .storiesGridCard.card${cardInfo.indexOf(card)} {
-            background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628528976/assets/stories/desktop/archDesktopDark_vumzzg.jpg");
+            background-image: url(${card.hrefLrg});
         }
     }
     </style>
