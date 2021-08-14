@@ -6,6 +6,7 @@ const createCard = (card) => `
     <style>
     .storiesGridCard.card${cardInfo.indexOf(card)} {
         background-image: url(${card.href});
+        background-position: center;
         position: relative;
     }
     .storiesGridCard.card${cardInfo.indexOf(card)} h3, h4, hr, .readStory {
@@ -22,6 +23,7 @@ const createCard = (card) => `
     @media only screen and (min-width: 768px) {
         .storiesGridCard.card${cardInfo.indexOf(card)} {
             background-image: url(${card.hrefLrg});
+            height: 500px;
         }
     }
     </style>
