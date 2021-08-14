@@ -6,6 +6,18 @@ const createCard = (card) => `
     <style>
     .storiesGridCard.card${cardInfo.indexOf(card)} {
         background-image: url(${card.href});
+        position: relative;
+    }
+    .storiesGridCard.card${cardInfo.indexOf(card)} h3, h4, hr, .readStory {
+        z-index: 2;
+    }
+    .darken {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
     }
     @media only screen and (min-width: 768px) {
         .storiesGridCard.card${cardInfo.indexOf(card)} {
@@ -14,6 +26,7 @@ const createCard = (card) => `
     }
     </style>
   <div class="storiesGridCard card${cardInfo.indexOf(card)}" >
+  <div class="darken" ></div>
     <h3>${card.date}</h3>
     <h4>by ${card.author}</h4>
     <hr />
