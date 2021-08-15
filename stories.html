@@ -1,175 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Photosnap is a photo sharing platform for photographers and storytellers."
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon.png"
-    />
 
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photosnap is a photo sharing platform for photographers and storytellers." />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png" />
 
-    <title>Photosnap | Photo Sharing</title>
-    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="/js/swup.js"></script>
-    <script defer type="module" src="/js/stories.js"></script>
-  </head>
-  <body>
-    <div class="bodyContainer">
-      <header>
-        <div class="headerLogo">
-          <a href="/index.html"
-            ><img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg"
-          /></a>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Photosnap | Photo Sharing</title>
+  <script defer type="module" src="js/stories.js"></script>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <header>
+      <div class="headerLogo">
+        <a href="index.html"><img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg" /></a>
+      </div>
+      <nav class="headerNav">
+        <ul class="headerNavLinks">
+          <li>
+            <a href="stories.html">
+              <h4>STORIES</h4>
+            </a>
+          </li>
+          <li>
+            <a href="features.html">
+              <h4>FEATURES</h4>
+            </a>
+          </li>
+          <li>
+            <a href="pricing.html">
+              <h4>PRICING</h4>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <input type="checkbox" class="menu-icon__checkbox" />
+          <div>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <nav class="headerNav">
-          <ul class="headerNavLinks">
-            <li>
-              <a href="/stories.html"><h4>STORIES</h4></a>
-            </li>
-            <li>
-              <a href="/features.html"><h4>FEATURES</h4></a>
-            </li>
-            <li>
-              <a href="/pricing.html"><h4>PRICING</h4></a>
-            </li>
-          </ul>
-          <div class="menu-icon">
-            <input type="checkbox" class="menu-icon__checkbox" />
-            <div>
-              <span></span>
-              <span></span>
+      </nav>
+      <button class="blockButton navInvite">
+        <h4>GET AN INVITE</h4>
+      </button>
+    </header>
+    <main>
+      <div class="overlay"></div>
+      <nav class="mobileNav notVisible">
+        <ul class="mobileNavLinks">
+          <li><a href="stories.html">STORIES</a></li>
+          <li><a href="features.html">FEATURES</a></li>
+          <li><a href="pricing.html">PRICING</a></li>
+          <hr />
+          <button class="blockButton mobileButton">GET AN INVITE</button>
+        </ul>
+      </nav>
+      <div class="hero storiesHero">
+        <div class="storiesHeroImg">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg"
+            alt="Moon of Appalachia" class="storiesMobile">
+        </div>
+        <div class="heroCard">
+          <div class="heroCardContainer">
+            <h4 class="storiesSubHeading">LAST MONTH'S FEATURED STORY</h4>
+            <h1>Hazy full moon of Appalachia</h1>
+            <P>March 2nd 2020 by John Appleseed</P>
+            <p>
+              The dissected plateau area, while not actually made up of geological mountains,
+              is popularly called "mountains," especially in eastern Kentucky and West Virginia,
+              and while the ridges are not high, the terrain is extremely rugged.
+            </p>
+            <div class="inviteContainer">
+              <a href="/#" class="textCardButton">
+                <h4>get an invite</h4>
+              </a>
             </div>
           </div>
-        </nav>
-        <button class="blockButton navInvite"><h4>GET AN INVITE</h4></button>
-      </header>
-      <main>
-        <div class="overlay"></div>
-        <nav class="mobileNav notVisible">
-          <ul class="mobileNavLinks">
-            <li><a href="/stories.html">STORIES</a></li>
-            <li><a href="/features.html">FEATURES</a></li>
-            <li><a href="pricing.html">PRICING</a></li>
-            <hr />
-            <button class="blockButton mobileButton">GET AN INVITE</button>
+        </div>
+      </div>
+      <div class="storiesGridContainer">
+        <div class="storiesPageGrid"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerLogo">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628281247/assets/shared/desktop/logoWhite_yos0jj.svg"
+            alt="Photosnap Logo" />
+        </div>
+        <div class="social">
+          <ul class="socialLinks">
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/facebook_hly1qx.svg"
+                  alt="Facebook" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/desktop/youtube_durbzf.svg"
+                  alt="Youtube" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/twitter_snsjba.svg"
+                  alt="Twitter" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/pinterest_zhslhk.svg"
+                  alt="Pinterest" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/instagram_yatnlx.svg"
+                  alt="Instagram" height="20px" width="20px" /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footerNav">
+          <ul>
+            <li>
+              <a href="#">
+                <h4>HOME</h4>
+              </a>
+            </li>
+            <li>
+              <a href="stories.html">
+                <h4>STORIES</h4>
+              </a>
+            </li>
+            <li>
+              <a href="features.html">
+                <h4>FEATURES</h4>
+              </a>
+            </li>
+            <li>
+              <a href="pricing.html">
+                <h4>PRICING</h4>
+              </a>
+            </li>
           </ul>
         </nav>
-        <div class="hero storiesHero">
-          <div class="storiesHeroImg">
-            <img src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105424/assets/stories/mobile/moon-of-appalacia_gpgzpa.jpg" alt="Moon of Appalachia" class="storiesMobile">
-          </div>
-          <div class="heroCard">
-            <div class="heroCardContainer">
-              <h4 class="storiesSubHeading">LAST MONTH'S FEATURED STORY</h4>
-              <h1>Hazy full moon of Appalachia</h1>
-              <P>March 2nd 2020 by John Appleseed</P>
-              <p>
-                The dissected plateau area, while not actually made up of geological mountains, 
-                is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-                and while the ridges are not high, the terrain is extremely rugged.
-              </p>
-              <div class="inviteContainer">
-                <a href="/#" class="textCardButton"><h4>get an invite</h4></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="storiesGridContainer">
-          <div class="storiesPageGrid"></div>
-        </div>
-      </main>
-      <footer>
-        <div class="footerLeft">
-          <div class="footerLogo">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628281247/assets/shared/desktop/logoWhite_yos0jj.svg"
-              alt="Photosnap Logo"
-            />
-          </div>
-          <div class="social">
-            <ul class="socialLinks">
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/facebook_hly1qx.svg"
-                    alt="Facebook"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/desktop/youtube_durbzf.svg"
-                    alt="Youtube"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/twitter_snsjba.svg"
-                    alt="Twitter"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/pinterest_zhslhk.svg"
-                    alt="Pinterest"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/instagram_yatnlx.svg"
-                    alt="Instagram"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <nav class="footerNav">
-            <ul>
-              <li>
-                <a href="#"><h4>HOME</h4></a>
-              </li>
-              <li>
-                <a href="/stories.html"><h4>STORIES</h4></a>
-              </li>
-              <li>
-                <a href="/features.html"><h4>FEATURES</h4></a>
-              </li>
-              <li>
-                <a href="/pricing.html"><h4>PRICING</h4></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footerRight">
-          <a href="#" class="textCardButton"><h4>get an invite</h4></a>
-          <div class="copyright">Copyright 2021. All Rights Reserved</div>
-        </div>
-      </footer>
-    </div>
-    <script type="text/javascript" src="/js/nav.js"></script>
-  </body>
+      </div>
+      <div class="footerRight">
+        <a href="#" class="textCardButton">
+          <h4>get an invite</h4>
+        </a>
+        <div class="copyright">Copyright 2021. All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
+
 </html>
-    
-
-
