@@ -10,7 +10,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 6.4rem 6rem;
+}
+
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  h3 {
+    transform: translateX(-32.5px);
+  }
 }
 
 table {

@@ -787,6 +787,7 @@ footer {
   height: 0;
   width: 0;
   visibility: hidden;
+  position: absolute;
 }
 
 label {
@@ -798,6 +799,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
+  transform: translateX(-32.5px);
 }
 
 label:after {
@@ -824,12 +826,6 @@ input:checked + label:after {
 
 label:active:after {
   width: 70px;
-}
-
-@media screen and (min-width: 1200px) {
-  label {
-    margin-right: 32.5px;
-  }
 }
 
 .menu-icon {
@@ -934,7 +930,19 @@ label:active:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 6.4rem 6rem;
+}
+
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.sliderWrapper h3 {
+  transform: translateX(-32.5px);
 }
 
 table {
