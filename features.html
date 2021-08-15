@@ -1,258 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Photosnap is a photo sharing platform for photographers and storytellers."
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon.png"
-    />
 
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photosnap is a photo sharing platform for photographers and storytellers." />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png" />
 
-    <title>Photosnap | Photo Sharing</title>
-    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="/js/swup.js"></script>
-  </head>
-  <body>
-    <div class="bodyContainer">
-      <header>
-        <div class="headerLogo">
-          <a href="/index.html"
-            ><img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg"
-          /></a>
-        </div>
-        <nav class="headerNav">
-          <ul class="headerNavLinks">
-            <li>
-              <a href="/stories.html"><h4>STORIES</h4></a>
-            </li>
-            <li>
-              <a href="/features.html"><h4>FEATURES</h4></a>
-            </li>
-            <li>
-              <a href="/pricing.html"><h4>PRICING</h4></a>
-            </li>
-          </ul>
-          <div class="menu-icon">
-            <input type="checkbox" class="menu-icon__checkbox" />
-            <div>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </nav>
-        <button class="blockButton navInvite"><h4>GET AN INVITE</h4></button>
-      </header>
-      <main>
-        <div class="overlay"></div>
-        <nav class="mobileNav notVisible">
-          <ul class="mobileNavLinks">
-            <li><a href="/stories.html">STORIES</a></li>
-            <li><a href="/features.html">FEATURES</a></li>
-            <li><a href="pricing.html">PRICING</a></li>
-            <hr />
-            <button class="blockButton mobileButton">GET AN INVITE</button>
-          </ul>
-        </nav>
-        <div class="hero">
-          <div class="heroImage featuresImg">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/features/mobile/hero_hyjwgk.jpg"
-              aria-hidden="true"
-            />
-          </div>
-          <div class="heroCard">
-            <div class="heroCardContainer">
-              <div class="gradientBox"></div>
-              <h1>FEATURES</h1>
-              <p>
-                We make sure all of our features are designed to be loved by every aspiring and even 
-                 professional photograpers who wanted to share their stories.
-              </p>
-            </div>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Photosnap | Photo Sharing</title>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <header>
+      <div class="headerLogo">
+        <a href="index.html"><img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/logo_egctub.svg" /></a>
+      </div>
+      <nav class="headerNav">
+        <ul class="headerNavLinks">
+          <li>
+            <a href="stories.html">
+              <h4>STORIES</h4>
+            </a>
+          </li>
+          <li>
+            <a href="features.html">
+              <h4>FEATURES</h4>
+            </a>
+          </li>
+          <li>
+            <a href="pricing.html">
+              <h4>PRICING</h4>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <input type="checkbox" class="menu-icon__checkbox" />
+          <div>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <div class="features featuresPage">
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/responsive_tui9wm.svg"
-              alt="100% Responsive"
-              width="72px"
-              height="72px"
-            />
-            <h3>100% Responsive</h3>
-            <p>
-              No matter which the device you’re on, our site is fully responsive
-              and stories look beautiful on any screen.
-            </p>
-          </div>
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/no-limit_pxhrax.svg"
-              alt="No Photo Upload Limit"
-              width="72px"
-              class="uploadIcon"
-            />
-            <h3>No Photo Upload Limit</h3>
-            <p>
-              Our tool has no limits on uploads or bandwidth. Freely upload in
-              bulk and share all of your stories in one go.
-            </p>
-          </div>
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/embed_rimb86.svg"
-              alt="Available to Embed"
-              width="72px"
-              height="72px"
-            />
-            <h3>Available to Embed</h3>
-            <p>
-              Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
-              videos, Google Maps, and more.
-            </p>
-          </div>
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/custom-domain_cbdhdk.svg"
-              alt="Custom Domain"
-              width="72px"
-              height="72px"
-            />
-            <h3>Custom Domain</h3>
-            <p>
-              With Photosnap subscriptions you can host your stories on your own domain. You can 
-              also remove our branding!
-            </p>
-          </div>
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/boost-exposure_dmxke9.svg"
-              alt="Boost Your Exposure"
-              width="72px"
-              height="72px"
-            />
-            <h3>Boost Your Exposure</h3>
-            <p>
-              Users that viewed your story or gallery can easily get notifed of new and featured 
-              stories with our built in mailing list.
-            </p>
-          </div>
-          <div class="featuresCard">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/drag-drop_fxvylu.svg"
-              alt="Drag & Drop Image"
-              width="72px"
-              height="72px"
-            />
-            <h3>Drag & Drop Image</h3>
-            <p>
-              Easily drag and drop your image and get beautiful shots everytime. No over the top 
-              tooling to add friction to creating stories.
-            </p>
-          </div>
+      </nav>
+      <button class="blockButton navInvite">
+        <h4>GET AN INVITE</h4>
+      </button>
+    </header>
+    <main>
+      <div class="overlay"></div>
+      <nav class="mobileNav notVisible">
+        <ul class="mobileNavLinks">
+          <li><a href="stories.html">STORIES</a></li>
+          <li><a href="features.html">FEATURES</a></li>
+          <li><a href="pricing.html">PRICING</a></li>
+          <hr />
+          <button class="blockButton mobileButton">GET AN INVITE</button>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="heroImage featuresImg">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/features/mobile/hero_hyjwgk.jpg"
+            aria-hidden="true" />
         </div>
-        <div class="heroCard inBetaCard">
+        <div class="heroCard">
           <div class="heroCardContainer">
             <div class="gradientBox"></div>
-            <h1>We're in Beta. Get your invite today!</h1>
-            <div class="inviteContainer">
-              <a href="/#" class="textCardButton"><h4>get an invite</h4></a>
-            </div>
+            <h1>FEATURES</h1>
+            <p>
+              We make sure all of our features are designed to be loved by every aspiring and even
+              professional photograpers who wanted to share their stories.
+            </p>
           </div>
         </div>
-      </main>
-      <footer>
-        <div class="footerLeft">
-          <div class="footerLogo">
-            <img
-              src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628281247/assets/shared/desktop/logoWhite_yos0jj.svg"
-              alt="Photosnap Logo"
-            />
-          </div>
-          <div class="social">
-            <ul class="socialLinks">
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/facebook_hly1qx.svg"
-                    alt="Facebook"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/desktop/youtube_durbzf.svg"
-                    alt="Youtube"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/twitter_snsjba.svg"
-                    alt="Twitter"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/pinterest_zhslhk.svg"
-                    alt="Pinterest"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/instagram_yatnlx.svg"
-                    alt="Instagram"
-                    height="20px"
-                    width="20px"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <nav class="footerNav">
-            <ul>
-              <li>
-                <a href="#"><h4>HOME</h4></a>
-              </li>
-              <li>
-                <a href="/stories.html"><h4>STORIES</h4></a>
-              </li>
-              <li>
-                <a href="/features.html"><h4>FEATURES</h4></a>
-              </li>
-              <li>
-                <a href="/pricing.html"><h4>PRICING</h4></a>
-              </li>
-            </ul>
-          </nav>
+      </div>
+      <div class="features featuresPage">
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/responsive_tui9wm.svg"
+            alt="100% Responsive" width="72px" height="72px" />
+          <h3>100% Responsive</h3>
+          <p>
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
         </div>
-        <div class="footerRight">
-          <a href="#" class="textCardButton"><h4>get an invite</h4></a>
-          <div class="copyright">Copyright 2021. All Rights Reserved</div>
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/no-limit_pxhrax.svg"
+            alt="No Photo Upload Limit" width="72px" class="uploadIcon" />
+          <h3>No Photo Upload Limit</h3>
+          <p>
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
         </div>
-      </footer>
-    </div>
-    <script type="text/javascript" src="/js/nav.js"></script>
-  </body>
-</html>
-  
- 
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/embed_rimb86.svg"
+            alt="Available to Embed" width="72px" height="72px" />
+          <h3>Available to Embed</h3>
+          <p>
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105415/assets/features/desktop/custom-domain_cbdhdk.svg"
+            alt="Custom Domain" width="72px" height="72px" />
+          <h3>Custom Domain</h3>
+          <p>
+            With Photosnap subscriptions you can host your stories on your own domain. You can
+            also remove our branding!
+          </p>
+        </div>
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/boost-exposure_dmxke9.svg"
+            alt="Boost Your Exposure" width="72px" height="72px" />
+          <h3>Boost Your Exposure</h3>
+          <p>
+            Users that viewed your story or gallery can easily get notifed of new and featured
+            stories with our built in mailing list.
+          </p>
+        </div>
+        <div class="featuresCard">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105412/assets/features/desktop/drag-drop_fxvylu.svg"
+            alt="Drag & Drop Image" width="72px" height="72px" />
+          <h3>Drag & Drop Image</h3>
+          <p>
+            Easily drag and drop your image and get beautiful shots everytime. No over the top
+            tooling to add friction to creating stories.
+          </p>
+        </div>
+      </div>
+      <div class="heroCard inBetaCard">
+        <div class="heroCardContainer">
+          <div class="gradientBox"></div>
+          <h1>We're in Beta. Get your invite today!</h1>
+          <div class="inviteContainer">
+            <a href="/#" class="textCardButton">
+              <h4>get an invite</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerLogo">
+          <img
+            src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628281247/assets/shared/desktop/logoWhite_yos0jj.svg"
+            alt="Photosnap Logo" />
+        </div>
+        <div class="social">
+          <ul class="socialLinks">
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/facebook_hly1qx.svg"
+                  alt="Facebook" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105420/assets/shared/desktop/youtube_durbzf.svg"
+                  alt="Youtube" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/twitter_snsjba.svg"
+                  alt="Twitter" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105419/assets/shared/desktop/pinterest_zhslhk.svg"
+                  alt="Pinterest" height="20px" width="20px" /></a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://res.cloudinary.com/djuu2phoy/image/upload/v1628105418/assets/shared/desktop/instagram_yatnlx.svg"
+                  alt="Instagram" height="20px" width="20px" /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footerNav">
+          <ul>
+            <li>
+              <a href="#">
+                <h4>HOME</h4>
+              </a>
+            </li>
+            <li>
+              <a href="stories.html">
+                <h4>STORIES</h4>
+              </a>
+            </li>
+            <li>
+              <a href="features.html">
+                <h4>FEATURES</h4>
+              </a>
+            </li>
+            <li>
+              <a href="pricing.html">
+                <h4>PRICING</h4>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footerRight">
+        <a href="#" class="textCardButton">
+          <h4>get an invite</h4>
+        </a>
+        <div class="copyright">Copyright 2021. All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="/js/nav.js"></script>
+</body>
 
+</html>
