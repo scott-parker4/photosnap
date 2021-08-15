@@ -10,4 +10,5 @@ This site is currently in production.
 
 - ~~Homepage mobile layout finished / For best viewing experience only view at mobile screen sizes~~
 - ~~Homepage tablet layout finished / For best viewing experience only view at tablet or smaller screen sizes~~
-- Homepage desktop layout finished / working on minor ui adjustments
+- ~~Homepage desktop layout finished / working on minor ui adjustments~~
+- All pages basic layout and styling finished. Working on implementing page load animations
