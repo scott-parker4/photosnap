@@ -424,6 +424,10 @@ a {
   text-decoration: none;
 }
 
+a a:link {
+  color: inherit;
+}
+
 a:visited {
   color: black;
 }
