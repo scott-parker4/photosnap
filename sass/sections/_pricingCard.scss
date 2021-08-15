@@ -1,9 +1,12 @@
 .pricingCard {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   text-align: center;
   padding: 10rem 3.5rem;
+  button {
+    max-width: 24.5rem;
+  }
   h2 {
     margin-bottom: 0;
   }

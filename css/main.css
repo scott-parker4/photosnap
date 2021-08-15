@@ -1408,9 +1408,13 @@ table th {
 .pricingCard, .pricingCardWhite, .pricingCardBlack {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   text-align: center;
   padding: 10rem 3.5rem;
+}
+
+.pricingCard button, .pricingCardWhite button, .pricingCardBlack button {
+  max-width: 24.5rem;
 }
 
 .pricingCard h2, .pricingCardWhite h2, .pricingCardBlack h2 {
