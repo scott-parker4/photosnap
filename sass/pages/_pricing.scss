@@ -19,10 +19,53 @@ table {
   tr {
     display: flex;
     justify-content: space-between;
+    align-content: center;
   }
   th {
     color: $light-grey;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
+  }
+}
+
+.lrgTable {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .mobileTable {
+    display: none;
+  }
+
+  .tableHeader {
+    border-bottom: 1px solid $pure-black;
+    margin-bottom: 2rem;
+    th {
+      margin-bottom: 0;
+    }
+  }
+  th,
+  td {
+    display: flex;
+    &:not(:first-child) {
+      justify-content: center;
+    }
+  }
+
+  .lrgTable {
+    display: block;
+    h4 {
+      color: $pure-black;
+    }
+    tr {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      padding: 1rem 0;
+    }
+    td {
+      h4 {
+        margin: 0;
+      }
+    }
   }
 }

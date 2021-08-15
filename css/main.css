@@ -893,12 +893,52 @@ table caption {
 table tr {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
 table th {
   color: #c8c8c8;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+}
+
+.lrgTable {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileTable {
+    display: none;
+  }
+  .tableHeader {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+  }
+  .tableHeader th {
+    margin-bottom: 0;
+  }
+  th,
+  td {
+    display: flex;
+  }
+  th:not(:first-child),
+  td:not(:first-child) {
+    justify-content: center;
+  }
+  .lrgTable {
+    display: block;
+  }
+  .lrgTable h4 {
+    color: black;
+  }
+  .lrgTable tr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem 0;
+  }
+  .lrgTable td h4 {
+    margin: 0;
+  }
 }
 
 .hero.storiesHero {
