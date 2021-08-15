@@ -872,6 +872,11 @@ footer {
   padding: 10rem 3.5rem;
 }
 
+.tableContainer #tableDark {
+  border: none;
+  border-top: 1px solid black;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -893,10 +898,6 @@ table th {
   color: #c8c8c8;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
-}
-
-table .tableDark {
-  border-bottom: 1px solid black;
 }
 
 .hero.storiesHero {
