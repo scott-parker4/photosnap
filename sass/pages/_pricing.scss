@@ -6,6 +6,13 @@
   }
 }
 
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6.4rem 6rem;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -67,5 +74,11 @@ table {
         margin: 0;
       }
     }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .pricingContainer {
+    display: flex;
   }
 }

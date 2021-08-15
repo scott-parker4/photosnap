@@ -783,6 +783,50 @@ footer {
   margin: 0;
 }
 
+#switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 65px;
+  height: 32px;
+  background: #c8c8c8;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-right: 32.5px;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 22px;
+  height: 22px;
+  background: black;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: black;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background: white;
+}
+
+label:active:after {
+  width: 70px;
+}
+
 .menu-icon {
   transform: scale(1.5);
 }
@@ -881,6 +925,13 @@ footer {
   border-top: 1px solid black;
 }
 
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6.4rem 6rem;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -942,6 +993,12 @@ table th {
   }
   .lrgTable td h4 {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricingContainer {
+    display: flex;
   }
 }
 
