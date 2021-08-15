@@ -14,6 +14,12 @@
   background-color: $pure-black;
 }
 
+.pricingButtonBlack {
+  @extend .blockButton;
+  color: $pure-black;
+  background-color: $pure-white;
+}
+
 .navInvite {
   padding: 1.2rem 2.4rem;
   h4 {

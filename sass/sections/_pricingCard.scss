@@ -1,0 +1,38 @@
+.pricingCard {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 10rem 3.5rem;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.perMonth {
+  color: $light-grey;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.pricingCardWhite {
+  @extend .pricingCard;
+}
+
+.pricingCardBlack {
+  @extend .pricingCard;
+  background-color: $pure-black;
+  color: $pure-white;
+  position: relative;
+  p {
+    color: $light-grey;
+  }
+  .gradientBox {
+    height: 0.5rem;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-image: $main-gradient;
+  }
+}

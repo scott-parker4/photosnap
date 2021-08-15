@@ -368,10 +368,11 @@ p {
   line-height: 2.5rem;
 }
 
-h1 {
+h1,
+.h2Big {
   font-size: 4rem;
   line-height: 4.8rem;
-  letter-spacing: 4.17;
+  letter-spacing: 0.417rem;
 }
 
 h2 {
@@ -750,7 +751,7 @@ footer {
 }
 
 .blockButton, .mobileButton,
-.navInvite {
+.navInvite, .pricingButtonBlack {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.25rem;
@@ -763,6 +764,11 @@ footer {
 .navInvite {
   color: white;
   background-color: black;
+}
+
+.pricingButtonBlack {
+  color: black;
+  background-color: white;
 }
 
 .navInvite {
@@ -961,6 +967,10 @@ footer {
 
 .heroImage.featuresImg {
   background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105414/assets/features/mobile/hero_hyjwgk.jpg");
+}
+
+.heroImage.pricingImg {
+  background-image: url("https://res.cloudinary.com/djuu2phoy/image/upload/v1628105417/assets/pricing/mobile/hero_l7qgcm.jpg");
 }
 
 @media screen and (min-width: 768px) {
@@ -1320,4 +1330,41 @@ footer {
   .heroCard.inBetaCard .gradientBox {
     left: -16.5rem;
   }
+}
+
+.pricingCard, .pricingCardWhite, .pricingCardBlack {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 10rem 3.5rem;
+}
+
+.pricingCard h2, .pricingCardWhite h2, .pricingCardBlack h2 {
+  margin-bottom: 0;
+}
+
+.perMonth {
+  color: #c8c8c8;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.pricingCardBlack {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.pricingCardBlack p {
+  color: #c8c8c8;
+}
+
+.pricingCardBlack .gradientBox {
+  height: 0.5rem;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(225deg, #ffc593, #bc7198, #5a77ff);
 }
