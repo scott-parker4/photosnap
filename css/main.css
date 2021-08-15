@@ -868,6 +868,37 @@ footer {
   }
 }
 
+.tableContainer {
+  padding: 10rem 3.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th,
+table caption {
+  text-align: left;
+  width: 100%;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+table th {
+  color: #c8c8c8;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+table .tableDark {
+  border-bottom: 1px solid black;
+}
+
 .hero.storiesHero {
   background-image: none;
   background-size: cover;

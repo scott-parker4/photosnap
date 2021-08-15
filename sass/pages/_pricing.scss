@@ -1,0 +1,26 @@
+.tableContainer {
+  padding: 10rem 3.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  td,
+  th,
+  caption {
+    text-align: left;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  th {
+    color: $light-grey;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  .tableDark {
+    border-bottom: 1px solid $pure-black;
+  }
+}
