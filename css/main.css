@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -800,7 +791,7 @@ label {
   border-radius: 100px;
   position: relative;
   margin: 0 4rem;
-  transform: translateX(-32.5px);
+  transform: translateX(-5px);
 }
 
 label:after {
@@ -831,6 +822,22 @@ label:active:after {
 
 .greyed {
   color: #c8c8c8;
+}
+
+.sliderActive {
+  display: initial;
+}
+
+@media screen and (min-width: 768px) {
+  label {
+    transform: translateX(-15px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  label {
+    transform: translateX(-32.5px);
+  }
 }
 
 .menu-icon {
@@ -936,18 +943,18 @@ label:active:after {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6.4rem 6rem;
+  padding: 6.4rem 0;
 }
 
 .sliderWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  width: 100%;
 }
 
 .sliderWrapper h3 {
-  transform: translateX(-32.5px);
+  transform: translateX(-5px);
 }
 
 table {
@@ -1012,11 +1019,23 @@ table th {
   .lrgTable td h4 {
     margin: 0;
   }
+  .sliderWrapper h3 {
+    transform: translateX(-15px);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .pricingContainer {
     display: flex;
+  }
+  .sliderContainer {
+    padding: 6.4rem 6rem;
+  }
+  .sliderWrapper {
+    width: 33%;
+  }
+  .sliderWrapper h3 {
+    transform: translateX(-32.5px);
   }
 }
 

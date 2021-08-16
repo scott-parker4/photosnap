@@ -11,16 +11,16 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6.4rem 6rem;
+  padding: 6.4rem 0;
 }
 
 .sliderWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33%;
+  width: 100%;
   h3 {
-    transform: translateX(-32.5px);
+    transform: translateX(-5px);
   }
 }
 
@@ -86,10 +86,26 @@ table {
       }
     }
   }
+  .sliderWrapper {
+    h3 {
+      transform: translateX(-15px);
+    }
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
   .pricingContainer {
     display: flex;
+  }
+
+  .sliderContainer {
+    padding: 6.4rem 6rem;
+  }
+
+  .sliderWrapper {
+    width: 33%;
+    h3 {
+      transform: translateX(-32.5px);
+    }
   }
 }

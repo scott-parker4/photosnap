@@ -44,7 +44,7 @@ label {
   border-radius: 100px;
   position: relative;
   margin: 0 4rem;
-  transform: translateX(-32.5px);
+  transform: translateX(-5px);
 }
 
 label:after {
@@ -78,5 +78,17 @@ label:active:after {
 }
 
 .sliderActive {
-  display: initial'
+  display: initial;
+}
+
+@media screen and (min-width: $tablet-width) {
+  label {
+    transform: translateX(-15px);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  label {
+    transform: translateX(-32.5px);
+  }
 }
