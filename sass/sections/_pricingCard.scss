@@ -49,12 +49,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 4rem;
+    button {
+      margin-top: 3rem;
+    }
     .pricingCardDefault {
       display: flex;
       flex-direction: column;
       align-content: flex-start;
       text-align: left;
       width: 40%;
+      h2:first-child {
+        margin-bottom: 2rem;
+      }
     }
     .pricingCardDefault {
       .h2Big,

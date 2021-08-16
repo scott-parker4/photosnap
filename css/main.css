@@ -1553,6 +1553,10 @@ table th {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 4rem;
+  }
+  .pricingCard button, .pricingCardWhite button, .pricingCardBlack button {
+    margin-top: 3rem;
   }
   .pricingCard .pricingCardDefault, .pricingCardWhite .pricingCardDefault, .pricingCardBlack .pricingCardDefault {
     display: flex;
@@ -1560,6 +1564,9 @@ table th {
     align-content: flex-start;
     text-align: left;
     width: 40%;
+  }
+  .pricingCard .pricingCardDefault h2:first-child, .pricingCardWhite .pricingCardDefault h2:first-child, .pricingCardBlack .pricingCardDefault h2:first-child {
+    margin-bottom: 2rem;
   }
   .pricingCard .pricingCardDefault .h2Big, .pricingCardWhite .pricingCardDefault .h2Big, .pricingCardBlack .pricingCardDefault .h2Big,
   .pricingCard .pricingCardDefault .perMonth,
