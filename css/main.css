@@ -1543,3 +1543,38 @@ table th {
   top: 0;
   background-image: linear-gradient(225deg, #ffc593, #bc7198, #5a77ff);
 }
+
+.priceTablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .pricingCard, .pricingCardWhite, .pricingCardBlack {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .pricingCard .pricingCardDefault, .pricingCardWhite .pricingCardDefault, .pricingCardBlack .pricingCardDefault {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+    width: 40%;
+  }
+  .pricingCard .pricingCardDefault .h2Big, .pricingCardWhite .pricingCardDefault .h2Big, .pricingCardBlack .pricingCardDefault .h2Big,
+  .pricingCard .pricingCardDefault .perMonth,
+  .pricingCardWhite .pricingCardDefault .perMonth,
+  .pricingCardBlack .pricingCardDefault .perMonth {
+    display: none;
+  }
+  .pricingCard .priceTablet, .pricingCardWhite .priceTablet, .pricingCardBlack .priceTablet {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 100%;
+    text-align: right;
+  }
+  .pricingCard .priceTablet h2, .pricingCardWhite .priceTablet h2, .pricingCardBlack .priceTablet h2 {
+    margin-top: 2rem;
+  }
+}

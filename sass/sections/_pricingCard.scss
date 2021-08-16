@@ -39,3 +39,38 @@
     background-image: $main-gradient;
   }
 }
+
+.priceTablet {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .pricingCard {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .pricingCardDefault {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      text-align: left;
+      width: 40%;
+    }
+    .pricingCardDefault {
+      .h2Big,
+      .perMonth {
+        display: none;
+      }
+    }
+    .priceTablet {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      height: 100%;
+      text-align: right;
+      h2 {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
