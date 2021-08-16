@@ -799,6 +799,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
+  margin: 0 4rem;
   transform: translateX(-32.5px);
 }
 
@@ -826,6 +827,10 @@ input:checked + label:after {
 
 label:active:after {
   width: 70px;
+}
+
+.greyed {
+  color: #c8c8c8;
 }
 
 .menu-icon {
@@ -937,7 +942,7 @@ label:active:after {
 .sliderWrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 33%;
 }
 

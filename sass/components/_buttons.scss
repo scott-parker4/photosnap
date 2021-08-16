@@ -43,6 +43,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
+  margin: 0 4rem;
   transform: translateX(-32.5px);
 }
 
@@ -72,8 +73,10 @@ label:active:after {
   width: 70px;
 }
 
-// @media screen and (min-width: $desktop-width) {
-//   label {
-//     margin-right: 32.5px;
-//   }
-// }
+.greyed {
+  color: $light-grey;
+}
+
+.sliderActive {
+  display: initial'
+}
