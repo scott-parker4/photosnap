@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6.4rem 0;
+  padding-top: 6rem;
 }
 
 .sliderWrapper {
@@ -86,6 +86,11 @@ table {
       }
     }
   }
+
+  .sliderContainer {
+    padding: 4rem 6rem;
+  }
+
   .sliderWrapper {
     h3 {
       transform: translateX(-15px);

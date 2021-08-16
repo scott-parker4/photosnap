@@ -943,7 +943,7 @@ label:active:after {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6.4rem 0;
+  padding-top: 6rem;
 }
 
 .sliderWrapper {
@@ -1018,6 +1018,9 @@ table th {
   }
   .lrgTable td h4 {
     margin: 0;
+  }
+  .sliderContainer {
+    padding: 4rem 6rem;
   }
   .sliderWrapper h3 {
     transform: translateX(-15px);
