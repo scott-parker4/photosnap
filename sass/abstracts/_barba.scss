@@ -1,0 +1,13 @@
+/* Page load animation */
+
+.barba-once {
+  opacity: 0;
+}
+
+.barba-once-active {
+  transition: opacity 1s linear;
+}
+
+.barba-once-to {
+  opacity: 1;
+}
