@@ -1587,4 +1587,8 @@ table th {
   .pricingCard .priceTablet h2, .pricingCardWhite .priceTablet h2, .pricingCardBlack .priceTablet h2 {
     margin-top: 2rem;
   }
+  .pricingCardBlack .gradientBox {
+    height: 100%;
+    width: 0.5rem;
+  }
 }
