@@ -1516,6 +1516,12 @@ table th {
 
 .pricingCard button, .pricingCardWhite button, .pricingCardBlack button {
   max-width: 24.5rem;
+  transition: all 0.2s;
+}
+
+.pricingCard button:hover, .pricingCardWhite button:hover, .pricingCardBlack button:hover {
+  background-color: #c8c8c8;
+  color: black;
 }
 
 .pricingCard h2, .pricingCardWhite h2, .pricingCardBlack h2 {

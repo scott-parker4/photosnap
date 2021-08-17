@@ -6,6 +6,11 @@
   padding: 10rem 3.5rem;
   button {
     max-width: 24.5rem;
+    transition: all 0.2s;
+    &:hover {
+      background-color: $light-grey;
+      color: $pure-black;
+    }
   }
   h2 {
     margin-bottom: 0;
