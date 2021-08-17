@@ -9,16 +9,19 @@ function updatePrice(card, price) {
   card.forEach((item) => (item.innerText = price));
 }
 
+function toggleGreyed(rem, add) {
+  rem.classList.remove('greyed');
+  add.classList.add('greyed');
+}
+
 function togglePrice() {
   if (slider.classList.contains('sliderActive')) {
-    monthly.classList.remove('greyed');
-    yearly.classList.add('greyed');
+    toggleGreyed(monthly, yearly);
     updatePrice(basic, '$19.00');
     updatePrice(pro, '$39.00');
     updatePrice(business, '$99.00');
   } else {
-    monthly.classList.add('greyed');
-    yearly.classList.remove('greyed');
+    toggleGreyed(yearly, monthly);
     updatePrice(basic, '$190.00');
     updatePrice(pro, '$390.00');
     updatePrice(business, '$990.00');
