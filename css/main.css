@@ -5,7 +5,7 @@
 }
 
 .barba-once-active {
-  transition: opacity 1s linear;
+  transition: opacity 1.5s linear 0.3s;
 }
 
 .barba-once-to {
