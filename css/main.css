@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 /* Page load animation */
+.home-before-once {
+  opacity: 0;
+}
+
 .home-once {
   opacity: 0;
 }
