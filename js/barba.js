@@ -5,7 +5,24 @@ barba.use(barbaCss);
 barba.init({
   transitions: [
     {
-      once() {},
+      name: 'home',
+      beforeOnce() {
+        console.log('beforeOnce');
+      },
+      once() {
+        console.log('once');
+      },
+      afterOnce() {
+        console.log('afterOnce');
+      },
+    },
+    {
+      name: 'fade',
+      to: {
+        namespace: ['fade'],
+      },
+      leave() {},
+      enter() {},
     },
   ],
 });

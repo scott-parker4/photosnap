@@ -1,14 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 /* Page load animation */
-.barba-once {
+.home-once {
   opacity: 0;
 }
 
-.barba-once-active {
+.home-once-active {
   transition: opacity 1.5s linear 0.3s;
 }
 
-.barba-once-to {
+.home-once-to {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: opacity 0.3s linear;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.3s linear;
+}
+
+.fade-enter-to {
   opacity: 1;
 }
 
