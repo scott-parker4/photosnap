@@ -6,20 +6,14 @@ barba.init({
   transitions: [
     {
       name: 'home',
-      beforeOnce() {
-        console.log('beforeOnce');
-      },
-      once() {
-        console.log('once');
-      },
-      afterOnce() {
-        console.log('afterOnce');
-      },
+      beforeOnce() {},
+      once() {},
+      afterOnce() {},
     },
     {
       name: 'fade',
       to: {
-        namespace: ['fade'],
+        namespace: ['fade', 'home'],
       },
       leave() {},
       enter() {},
