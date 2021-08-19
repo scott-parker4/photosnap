@@ -1,5 +1,6 @@
 import navSlider from './nav.js';
 import createStories from './stories.js';
+import pricingToggle from './pricing.js';
 
 // tell Barba to use the css plugin
 barba.use(barbaCss);
@@ -21,7 +22,7 @@ barba.init({
     {
       name: 'fade',
       to: {
-        namespace: ['fade', 'home', 'stories'],
+        namespace: ['fade', 'home', 'stories', 'pricing'],
       },
       leave() {},
       enter() {},
@@ -33,6 +34,12 @@ barba.init({
       namespace: 'stories',
       beforeEnter({ next }) {
         createStories();
+      },
+    },
+    {
+      namespace: 'pricing',
+      beforeEnter({ next }) {
+        pricingToggle();
       },
     },
   ],
