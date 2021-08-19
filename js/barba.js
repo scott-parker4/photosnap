@@ -13,10 +13,21 @@ barba.init({
     {
       name: 'fade',
       to: {
-        namespace: ['fade', 'home'],
+        namespace: ['fade', 'home', 'stories'],
       },
       leave() {},
       enter() {},
+    },
+  ],
+  views: [
+    {
+      namespace: 'stories',
+      beforeEnter({ next }) {
+        const script = document.createElement('script');
+        script.src = './js/stories.js';
+        script.type = 'module';
+        next.container.appendChild(script);
+      },
     },
   ],
 });
