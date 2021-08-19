@@ -1,22 +1,24 @@
-const nav = document.querySelector('.mobileNav');
-const burger = document.querySelector('.menu-icon');
-const overlay = document.querySelector('.overlay');
+export default function navSlider() {
+  const nav = document.querySelector('.mobileNav');
+  const burger = document.querySelector('.menu-icon');
+  const overlay = document.querySelector('.overlay');
 
-function vis() {
-  nav.classList.add('notVisible');
-  overlay.classList.add('notVisible');
-}
-
-function showMenu() {
-  if (nav.classList.contains('active')) {
-    setTimeout(vis, 300);
-  } else {
-    nav.classList.remove('notVisible');
-    overlay.classList.remove('notVisible');
+  function vis() {
+    nav.classList.add('notVisible');
+    overlay.classList.add('notVisible');
   }
 
-  nav.classList.toggle('active');
-  overlay.classList.toggle('active');
-}
+  function showMenu() {
+    if (nav.classList.contains('active')) {
+      setTimeout(vis, 300);
+    } else {
+      nav.classList.remove('notVisible');
+      overlay.classList.remove('notVisible');
+    }
 
-burger.addEventListener('click', showMenu);
+    nav.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+
+  burger.addEventListener('click', showMenu);
+}

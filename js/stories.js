@@ -1,8 +1,9 @@
 import { cardInfo } from './cardInfo.js';
 
-const grid = document.querySelector('.storiesPageGrid');
+export default function createStories() {
+  const grid = document.querySelector('.storiesPageGrid');
 
-const createCard = (card) => `
+  const createCard = (card) => `
     <style>
     .storiesGridCard.card${cardInfo.indexOf(card)} {
         background-image: url(${card.href});
@@ -44,4 +45,7 @@ const createCard = (card) => `
   </div>
   `;
 
-grid.innerHTML = cardInfo.map((singleCard) => createCard(singleCard)).join('');
+  grid.innerHTML = cardInfo
+    .map((singleCard) => createCard(singleCard))
+    .join('');
+}

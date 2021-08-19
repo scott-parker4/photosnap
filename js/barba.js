@@ -1,5 +1,13 @@
+import navSlider from './nav.js';
+import createStories from './stories.js';
+
 // tell Barba to use the css plugin
 barba.use(barbaCss);
+
+// Load mobile nav script before each page load
+barba.hooks.beforeEnter(({ next }) => {
+  navSlider();
+});
 
 // init Barba
 barba.init({
@@ -19,14 +27,12 @@ barba.init({
       enter() {},
     },
   ],
+  // Load stories grid script on page load
   views: [
     {
       namespace: 'stories',
       beforeEnter({ next }) {
-        const script = document.createElement('script');
-        script.src = './js/stories.js';
-        script.type = 'module';
-        next.container.appendChild(script);
+        createStories();
       },
     },
   ],
