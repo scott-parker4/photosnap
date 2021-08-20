@@ -28,7 +28,7 @@ barba.init({
       enter() {},
     },
   ],
-  // Load stories grid script on page load
+  // Load stories grid and pricing scripts on page load
   views: [
     {
       namespace: 'stories',
@@ -40,6 +40,13 @@ barba.init({
       namespace: 'pricing',
       beforeEnter({ next }) {
         pricingToggle();
+      },
+    },
+    {
+      namespace: 'home',
+      beforeEnter() {
+        const home = document.querySelector('.bodyContainer');
+        home.classList.remove('hideTransition');
       },
     },
   ],

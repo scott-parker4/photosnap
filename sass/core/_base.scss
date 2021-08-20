@@ -19,6 +19,10 @@ body {
   max-width: $max-width;
 }
 
+.hideTransition {
+  opacity: 0;
+}
+
 main {
   position: relative;
   overflow: hidden;

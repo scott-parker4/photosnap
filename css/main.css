@@ -447,6 +447,10 @@ body {
   max-width: 1440px;
 }
 
+.hideTransition {
+  opacity: 0;
+}
+
 main {
   position: relative;
   overflow: hidden;
